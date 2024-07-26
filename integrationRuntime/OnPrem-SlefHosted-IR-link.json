@@ -1,0 +1,12 @@
+{
+	"name": "OnPrem-SlefHosted-IR-link",
+	"properties": {
+		"type": "SelfHosted",
+		"typeProperties": {
+			"linkedInfo": {
+				"resourceId": "/subscriptions/7f5349f7-4c34-49b4-a310-d06327849398/resourcegroups/ADFDev001/providers/Microsoft.DataFactory/factories/DataFactory-ADFDev001/integrationruntimes/OnPrem-SlefHosted-IR",
+				"authorizationType": "Rbac"
+			}
+		}
+	}
+}

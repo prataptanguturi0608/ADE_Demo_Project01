@@ -1,0 +1,23 @@
+{
+	"name": "ds_mfs_demo_project01_input",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_mfsdemo_AdventureWorksLT2017_blob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": "mfs-demo-project01-input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

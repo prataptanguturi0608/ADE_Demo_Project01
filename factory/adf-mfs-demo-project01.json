@@ -1,0 +1,9 @@
+{
+	"name": "adf-mfs-demo-project01",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "639953ac-24fd-470f-8c0a-1ade99c0fe38",
+		"tenantId": "dd82188f-36c9-46c8-98ba-e0a867221563"
+	}
+}
