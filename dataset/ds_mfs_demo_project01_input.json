@@ -18,6 +18,14 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
+				"fileName": {
+					"value": "@(concat(dataset().p_TableName,'.txt'))",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@concat(dataset().p_SchemaName,'/',dataset().p_TableName)",
+					"type": "Expression"
+				},
 				"container": "mfs-demo-project01-input"
 			},
 			"columnDelimiter": ",",

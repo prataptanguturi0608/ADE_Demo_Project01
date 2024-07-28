@@ -72,8 +72,7 @@
 								"sink": {
 									"type": "DelimitedTextSink",
 									"storeSettings": {
-										"type": "AzureBlobStorageWriteSettings",
-										"copyBehavior": "PreserveHierarchy"
+										"type": "AzureBlobStorageWriteSettings"
 									},
 									"formatSettings": {
 										"type": "DelimitedTextWriteSettings",
@@ -100,7 +99,17 @@
 							"outputs": [
 								{
 									"referenceName": "ds_mfs_demo_project01_input",
-									"type": "DatasetReference"
+									"type": "DatasetReference",
+									"parameters": {
+										"p_SchemaName": {
+											"value": "@item().Schemaname",
+											"type": "Expression"
+										},
+										"p_TableName": {
+											"value": "@item().TableName",
+											"type": "Expression"
+										}
+									}
 								}
 							]
 						}
